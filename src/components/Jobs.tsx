@@ -48,10 +48,10 @@ function ListOfJobs() {
   return (
     <div className="p-5">
       {selectedSkills.length > 0 && (
-        <div className="flex justify-between bg-white p-6">
-          <div>
+        <div className="flex justify-between items-center bg-white px-6 py-3">
+          <div className="flex">
             {selectedSkills.map((skill) => (
-              <span key={skill} className="flex flex-row p-3">
+              <div key={skill} className="flex flex-row p-3">
                 <span
                   className="bg-[#eef6f6] text-[#5ba4a4] font-bold p-2 rounded hover:text-[#eef6f6] hover:bg-[#5ba4a4] cursor-pointer hover:ease-in duration-300"
                   onClick={() => handleSkillRemove(skill)}
@@ -61,16 +61,16 @@ function ListOfJobs() {
                 <img
                   src="/images/icon-remove.svg"
                   alt="remove"
-                  className="p-2 top-0 right-0 w-9 h-10 cursor-pointer bg-[#5ba4a4] hover:bg-black hover:ease-in duration-300"
+                  className="p-2 w-9 h-10 cursor-pointer bg-[#5ba4a4] hover:bg-black hover:ease-in duration-300"
                   onClick={() => handleSkillRemove(skill)}
                 />
-              </span>
+              </div>
             ))}
           </div>
 
           <div>
             <span
-              className="text-[#5ba4a4] hover:underline hover:decoration-[#5ba4a4] cursor-pointer font-medium"
+              className="text-[#5ba4a4] hover:underline hover:decoration-[#5ba4a4] cursor-pointer font-bold"
               onClick={handleClearAllSkills}
             >
               Clear
