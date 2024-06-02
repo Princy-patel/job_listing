@@ -6,8 +6,8 @@ Welcome to Job Listing Landing Page project! This project aims to create a user-
 
 ## Features
 
-- Filtering Job Listings: Users can filter job listings based on selected categories.
-- Interactive Hover and Focus States: All interactive elements on the page have hover and focus states for improved user experience.
+- <b>Filtering Job Listings:</b> Users can filter job listings based on selected categories.
+- <b>Interactive Hover and Focus States:</b> All interactive elements on the page have hover and focus states for improved user experience.
 ## 🛠 Skills
 Javascript, HTML, CSS, Typescript, ReactJs, Tailwind CSS
 
