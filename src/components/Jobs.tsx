@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import useJobContext from "../context/useJobContext";
-import { IJobs } from "../../@types/data";
+import { useEffect, useRef, useState } from 'react';
+import useJobContext from '../context/useJobContext';
+import { IJobs } from '../../@types/data';
 
 function ListOfJobs() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
