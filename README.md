@@ -26,6 +26,32 @@ Javascript, HTML, CSS, Typescript, ReactJs, Tailwind CSS
 ## Data Source
 The project uses a local data.json file to populate the content on the landing page. You can modify this file to update the job listings data as needed.
 
+## Prettier
+
+- Run the following command to install Prettier as a development dependency:
+
+ ```bash
+  npm i prettier-plugin-tailwindcss@latest
+```
+- Add the following code to your <i>.prettier.json</i> file:
+```bash
+ {
+  "semi": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always"
+}
+```
+- To format code, run the following command:
+```bash
+  npx prettier --write
+```
+
+- Add <code>{ "plugins": ["prettier-plugin-tailwindcss"] }</code> in <i>.prettier.json</i> file.
+  
 ## Contributing
 
 Contributions are always welcome!
