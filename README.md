@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Job Listing Landing Page
 
-Currently, two official plugins are available:
+Welcome to Job Listing Landing Page project! This project aims to create a user-friendly landing page for job listings with features such as filtering based on categories, and interactive hover and focus states.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- <b>Filtering Job Listings:</b> Users can filter job listings based on selected categories.
+- <b>Interactive Hover and Focus States:</b> All interactive elements on the page have hover and focus states for improved user experience.
+## 🛠 Skills
+Javascript, HTML, CSS, Typescript, ReactJs, Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
+## Getting Started
+1. Clone the repository to your local machine.
+2. Open the project directory.
+3. Install dependencies.
+```bash
+  npm install
 ```
+4. Start the development server:
+```bash
+  npm run dev
+```
+## Data Source
+The project uses a local data.json file to populate the content on the landing page. You can modify this file to update the job listings data as needed.
+## Contributing
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Contributions are always welcome!
+
+If you have any ideas, suggestions, or bug fixes, feel free to submit a pull request.
+
+
+## Feedback
+
+Feel free to contribute or share your suggestions. Your feedback will be highly valued. Thank you!
