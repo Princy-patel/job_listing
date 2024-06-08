@@ -6,7 +6,7 @@ function Container() {
       <img
         src="/images/bg-header-desktop.svg"
         alt="header-image"
-        className="w-full bg-[#5ba4a4] overflow-y-hidden"
+        className="w-full overflow-y-hidden bg-[#5ba4a4]"
       />
       <ListOfJobs />
     </div>

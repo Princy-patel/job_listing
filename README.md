@@ -25,6 +25,7 @@ Javascript, HTML, CSS, Typescript, ReactJs, Tailwind CSS
 ```
 ## Data Source
 The project uses a local data.json file to populate the content on the landing page. You can modify this file to update the job listings data as needed.
+
 ## Contributing
 
 Contributions are always welcome!

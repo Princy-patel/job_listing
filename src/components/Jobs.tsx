@@ -48,12 +48,12 @@ function ListOfJobs() {
   return (
     <div className="p-5">
       {selectedSkills.length > 0 && (
-        <div className="flex justify-between items-center bg-white px-6 py-3">
+        <div className="flex items-center justify-between bg-white px-6 py-3">
           <div className="flex">
             {selectedSkills.map((skill) => (
               <div key={skill} className="flex flex-row p-3">
                 <span
-                  className="bg-[#eef6f6] text-[#5ba4a4] font-bold p-2 rounded hover:text-[#eef6f6] hover:bg-[#5ba4a4] cursor-pointer hover:ease-in duration-300"
+                  className="cursor-pointer rounded bg-[#eef6f6] p-2 font-bold text-[#5ba4a4] duration-300 hover:bg-[#5ba4a4] hover:text-[#eef6f6] hover:ease-in"
                   onClick={() => handleSkillRemove(skill)}
                 >
                   {skill}
@@ -61,7 +61,7 @@ function ListOfJobs() {
                 <img
                   src="/images/icon-remove.svg"
                   alt="remove"
-                  className="p-2 w-9 h-10 cursor-pointer bg-[#5ba4a4] hover:bg-black hover:ease-in duration-300"
+                  className="h-10 w-9 cursor-pointer bg-[#5ba4a4] p-2 duration-300 hover:bg-black hover:ease-in"
                   onClick={() => handleSkillRemove(skill)}
                 />
               </div>
@@ -70,7 +70,7 @@ function ListOfJobs() {
 
           <div>
             <span
-              className="text-[#5ba4a4] hover:underline hover:decoration-[#5ba4a4] cursor-pointer font-bold"
+              className="cursor-pointer font-bold text-[#5ba4a4] hover:underline hover:decoration-[#5ba4a4]"
               onClick={handleClearAllSkills}
             >
               Clear
@@ -82,13 +82,13 @@ function ListOfJobs() {
         return (
           <div
             key={data.id}
-            className="flex md:flex-row bg-white shadow-lg shadow-lime-[#eef6f6] m-5 p-5 rounded-lg"
+            className="shadow-lime-[#eef6f6] m-5 flex rounded-lg bg-white p-5 shadow-lg md:flex-row"
           >
             <div className="flex items-center md:items-start">
               <img
                 src={data.logo}
                 alt={data.company}
-                className="h-16 w-16 mr-5"
+                className="mr-5 h-16 w-16"
               />
               <div>
                 <div className="flex items-center">
@@ -96,33 +96,33 @@ function ListOfJobs() {
                     {data.company}
                   </span>
                   {data.new && (
-                    <span className="ml-2 bg-[#5ba4a4] text-white rounded-full px-2 py-1 text-xs">
+                    <span className="ml-2 rounded-full bg-[#5ba4a4] px-2 py-1 text-xs text-white">
                       NEW!
                     </span>
                   )}
                   {data.featured && (
-                    <span className="ml-2 bg-gray-800 text-white rounded-full px-2 py-1 text-xs">
+                    <span className="ml-2 rounded-full bg-gray-800 px-2 py-1 text-xs text-white">
                       FEATURED
                     </span>
                   )}
                 </div>
                 <div className="mt-2">
-                  <h2 className="font-bold text-[#2c3a3a] text-lg cursor-pointer hover:text-[#5ba4a4] hover:ease-in duration-300">
+                  <h2 className="cursor-pointer text-lg font-bold text-[#2c3a3a] duration-300 hover:text-[#5ba4a4] hover:ease-in">
                     {data.position}
                   </h2>
                 </div>
-                <div className="mt-2 [&>*]:font-medium [&>*]:text-[#7b8e8e] ">
+                <div className="mt-2 [&>*]:font-medium [&>*]:text-[#7b8e8e]">
                   <span className="pr-3">{data.postedAt} · </span>
                   <span className="pr-3">{data.contract} · </span>
                   <span>{data.location}</span>
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap items-center mt-4 md:mt-0 md:ml-auto">
+            <div className="mt-4 flex flex-wrap items-center md:ml-auto md:mt-0">
               {data.languages.map((lang) => (
                 <span
                   key={lang}
-                  className="bg-[#eef6f6] text-[#5ba4a4] font-bold mr-4 mb-2 p-2 rounded hover:text-[#eef6f6] hover:bg-[#5ba4a4] cursor-pointer hover:ease-in duration-300"
+                  className="mb-2 mr-4 cursor-pointer rounded bg-[#eef6f6] p-2 font-bold text-[#5ba4a4] duration-300 hover:bg-[#5ba4a4] hover:text-[#eef6f6] hover:ease-in"
                   onClick={handleSkillClick.bind(null, lang)}
                 >
                   {lang}
@@ -131,7 +131,7 @@ function ListOfJobs() {
               {data.tools.map((tool) => (
                 <span
                   key={tool}
-                  className="bg-[#eef6f6] text-[#5ba4a4] font-bold mr-4 mb-2 p-2 rounded hover:text-[#eef6f6] hover:bg-[#5ba4a4] cursor-pointer hover:ease-in duration-300"
+                  className="mb-2 mr-4 cursor-pointer rounded bg-[#eef6f6] p-2 font-bold text-[#5ba4a4] duration-300 hover:bg-[#5ba4a4] hover:text-[#eef6f6] hover:ease-in"
                   onClick={handleSkillClick.bind(null, tool)}
                 >
                   {tool}
