@@ -33,7 +33,7 @@ The project uses a local data.json file to populate the content on the landing p
  ```bash
   npm i prettier-plugin-tailwindcss@latest
 ```
-- Add the following code to your <i>.prettier.json</i> file:
+- Add the following code to your <i>.prettierrc.json</i> file:
 ```bash
  {
   "semi": true,
@@ -50,7 +50,7 @@ The project uses a local data.json file to populate the content on the landing p
   npx prettier --write
 ```
 
-- Add <code>{ "plugins": ["prettier-plugin-tailwindcss"] }</code> in <i>.prettier.json</i> file.
+- Add <code>{ "plugins": ["prettier-plugin-tailwindcss"] }</code> in <i>.prettierrc.json</i> file.
   
 ## Contributing
 
